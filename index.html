@@ -1,58 +1,1327 @@
 <html>
+  <head>
+    <title>
+      Ireland - HL7® (Health Level 7) - FHIR® IE Core Profile - iEHR
+    </title>
 
-<head>
-	<title>Ireland - HL7® (Health Level 7) - FHIR® IE Core Profile - iEHR</title>
+    <!-- Header tag information -->
+    <link rel="icon" href="./hl7-ireland.ico" />
 
-	<!-- Header tag information -->
-	<link rel="icon" href="./hl7-ireland.ico" />
+    <!-- Descriptions for search engines -->
+    <meta
+      name="description"
+      content="HL7® Ireland for the standardization of electronic health information exchange. Information on HL7®.ie, iEHR.ai, FHIR®, HL7® FHIR® Engine, electronic health record."
+    />
 
-	<!-- Descriptions for search engines -->
-	<meta name="description"
-		content="HL7® Ireland for the standardization of electronic health information exchange. Information on HL7®.ie, iEHR.ai, FHIR®, HL7® FHIR® Engine, electronic health record.">
+    <meta
+      name="keywords"
+      content="HL7®, EHR, iEHR, electronic health record, health level seven, HL7® interface engine, HL7® integration, HL7® messaging toolkit, HL7® software, software integration, HL7® interface, HL7® messaging, HL7® application, HL7® tool, HL7® toolkit, HL7® parser, HL7® middleware, FHIR®, Ireland FHIR, IE Core Profile"
+    />
+  </head>
 
-	<meta name="keywords"
-		content="HL7®, EHR, iEHR, electronic health record, health level seven, HL7® interface engine, HL7® integration, HL7® messaging toolkit, HL7® software, software integration, HL7® interface, HL7® messaging, HL7® application, HL7® tool, HL7® toolkit, HL7® parser, HL7® middleware, FHIR®, Ireland FHIR, IE Core Profile">
+  <body>
+    <table width="100%" height="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" valign="center">
+          <table
+            width="50%"
+            border="0"
+            cellpadding="5"
+            cellspacing="0"
+            align="center"
+          >
+            <tr>
+              <td align="center" valign="bottom" width="47%">
+                <a href="https://www.iehr.ai/fhir/ie/core"
+                  ><img
+                    src="./hl7-ireland-256.png"
+                    height="128"
+                    alt="HL7® Ireland"
+                    border="0"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" width="47%">
+                For FHIR® IE (Ireland) Core Implementation Guide, please visit
+                <br />
+                <a
+                  href="https://www.iehr.ai/fhir/ie/core"
+                  title="FHIR® IE (Ireland) Core Implementation Guide"
+                  >IE Core Profile
+                </a>
+                <br />
+                <br />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom" width="47%">
+                <p>
+                  HL7® and FHIR® are registered trademarks of Health Level Seven
+                  (HL7®), Inc., the non-profit standards developing organization
+                  that is accredited by the American National Standards
+                  Institute (ANSI).<br />
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
 
-</head>
+    <div style="display: none">
+      <table class="colstu">
+        <tbody>
+          <tr>
+            <td colspan="4">
+              <i>Official URL</i>:
+              <span class="copy-text"
+                >http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core<button
+                  data-clipboard-text="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+                  title=""
+                  class="btn-copy"
+                  data-original-title="Click to copy URL"
+                ></button
+              ></span>
+            </td>
+            <td>
+              <i>Version</i>:
+              <span class="copy-text"
+                >2.0.0<button
+                  data-clipboard-text="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core|2.0.0"
+                  title=""
+                  class="btn-copy"
+                  data-original-title="Click to copy versioned URL"
+                ></button
+              ></span>
+            </td>
+          </tr>
 
+          <tr>
+            <td colspan="3">
+              <i> IG Standards status: </i>
+              <a
+                href="http://hl7.org/fhir/R4/versions.html#std-process"
+                title="Standard Status"
+                >Trial-use</a
+              >
+            </td>
 
-<body>
+            <td>
+              <a href="http://hl7.org/fhir/versions.html#maturity"
+                >Maturity Level</a
+              >: 3
+            </td>
 
-	<table width="100%" height="100%" cellspacing="0" cellpadding="0">
-		<tr>
-			<td align="center" valign="center">
+            <td>
+              <i>Computable Name</i>:
+              <span style="font-family: monospace">IECore</span>
+            </td>
+          </tr>
 
-				<table width="50%" border="0" cellpadding="5" cellspacing="0" align="center">
-					<tr>
-						<td align="center" valign="bottom" width="47%">
-							<a href="https://www.iehr.ai/fhir/ie/core"><img src="./hl7-ireland-256.png"
-									height=128 alt="HL7® Ireland" border=0></a>
-						</td>
-					</tr>
-					<tr>
-						<td align="center" width="47%">
-							For FHIR® IE (Ireland) Core Implementation Guide, please visit <br>
-							<a href="https://www.iehr.ai/fhir/ie/core" title="FHIR® IE (Ireland) Core Implementation Guide">IE Core Profile </a>
-							<br>
-							<br>
-							<br>
-						</td>
-					</tr>
-					<tr>
-						<td align="center" valign="bottom" width="47%">
-							<p>HL7® and FHIR® are registered trademarks of Health Level Seven (HL7®), Inc., the
-								non-profit standards developing organization that is accredited by the American National
-								Standards Institute (ANSI).<br>
-							</p>
-						</td>
-					</tr>
-				</table>
+          <tr>
+            <td colspan="5">
+              <i>Other Identifiers:</i>
+            </td>
+          </tr>
 
-			</td>
-		</tr>
+          <tr>
+            <td colspan="5">
+              <p>
+                <em>Copyright/Legal</em>: iEHR.ai, all rights reserved Creative
+                Commons License
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-	</table>
+      <p><!-- white space is critical inside of capture --></p>
+      <div class="markdown-toc">
+        <ul id="markdown-toc">
+          <li>
+            <a
+              href="https://www.iehr.ai/fhir/ie/core/#introduction"
+              id="markdown-toc-introduction"
+              >Introduction</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.iehr.ai/fhir/ie/core/#how-to-read-this-guide"
+              id="markdown-toc-how-to-read-this-guide"
+              >How To Read This Guide</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.iehr.ai/fhir/ie/core/#ie-core-actors"
+              id="markdown-toc-ie-core-actors"
+              >IE Core Actors</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.iehr.ai/fhir/ie/core/#ie-core-profiles"
+              id="markdown-toc-ie-core-profiles"
+              >IE Core Profiles</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.iehr.ai/fhir/ie/core/#ie-core-fhir-restful-interactions"
+              id="markdown-toc-ie-core-fhir-restful-interactions"
+              >IE Core FHIR RESTful interactions</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.iehr.ai/fhir/ie/core/#license"
+              id="markdown-toc-license"
+              >License</a
+            >
+          </li>
+        </ul>
+      </div>
 
-</body>
+      <p class="new-content">
+        Where possible, new and updated pre-publishing content is highlighted
+        with green text and background-
+        <strong>This highlighting will be removed prior to publication.</strong>
+      </p>
 
+      <p class="stu-note">
+        Key updates and detailed changes between this and prior versions are
+        available on the IE Core
+        <a href="https://www.iehr.ai/fhir/ie/core/changes.html">Change Log</a>
+        and
+        <a href="https://www.iehr.ai/fhir/ie/core/changes-between-versions.html"
+          >Changes Between Versions</a
+        >
+        pages.
+      </p>
+
+      <h3 id="introduction">
+        Introduction<a
+          class="anchorjs-link"
+          href="#introduction"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h3>
+
+      <p>
+        This guide and the IE Core profiles have become the foundation for Irish
+        FHIR implementation guides. This annual release reflects changes to iEHR
+        IE Core Data for Interoperability (IECDI), and
+        <a href="https://www.irishcollegeofgps.ie"
+          >The National General Practice Information Technology (ICGP-GPIT)
+          Group</a
+        >
+        Software Management Systems Requirements, comments and requests from the
+        Irish FHIR community. (The
+        <a href="https://www.iehr.ai/fhir/ie/core/future-of-IE-core.html"
+          >Future of IE Core</a
+        >
+        page outlines this approach to yearly updates.) IE Core has benefitted
+        from testing and guidance by the Argonaut Project Team. Their feedback
+        continues to lay the groundwork for documenting the IE Core Profile
+        design, interactions, requirements, and guidelines for patient data
+        access and ICGP-GPIT Certification testing. Under the guidance of HL7
+        and the iEHR.ai Ireland Steering Committee, the content will expand in
+        future versions to meet the needs specific to the Irish.
+      </p>
+
+      <p>
+        The IE Core Implementation Guide is based on
+        <a
+          href="http://hl7.org/fhir/R4/index.html"
+          title="FHIR Version R4 Specification Home Page"
+          >FHIR Version R4</a
+        >. It defines the minimum constraints on the FHIR resources to create
+        the IE Core Profiles. The elements, extensions, vocabularies, and value
+        sets that SHALL be present are identified, and how they are used is
+        defined. It also documents the minimum FHIR RESTful interactions for
+        each IE Core Profiles to access patient data. Establishing the "floor"
+        of standards to promote interoperability and adoption through common
+        implementation allows for further standards development evolution for
+        specific use cases. There are two different ways to implement IE Core:
+      </p>
+      <ol>
+        <li>
+          Profile Only Support: Systems may support <em>only</em> the IE Core
+          Profiles to represent clinical information.
+        </li>
+        <li>
+          Profile Support + Interaction Support: Systems may support
+          <em>both</em> the IE Core Profile content structure <em>and</em> the
+          RESTful interactions defined for a resource.
+        </li>
+      </ol>
+
+      <p>
+        For a detailed description of these different usages of IE Core, see the
+        <a
+          href="https://www.iehr.ai/fhir/ie/core/capability-statements.html"
+          title="CapabilityStatements defined for this Guide"
+          >Conformance Requirements</a
+        >
+        page.
+      </p>
+
+      <h3 id="how-to-read-this-guide">
+        How To Read This Guide<a
+          class="anchorjs-link"
+          href="#how-to-read-this-guide"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h3>
+
+      <p>
+        This Guide is divided into several pages, which are listed at the top of
+        each page in the menu bar.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/index.html"
+            title="Home Page"
+            >Home</a
+          >: The home page provides the introduction and background for IE Core.
+        </li>
+        <li>
+          <a href="https://www.iehr.ai/fhir/ie/core/conformance.html"
+            >Conformance</a
+          >: These pages describe the set of rules to claim conformance to this
+          guide
+          <ul>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/general-requirements.html"
+                >General Requirements</a
+              >: This page defines requirements common to all actors and
+              profiles used in this guide, including how CapabilityStatements
+              are used to claim conformance.
+            </li>
+            <li>
+              <a href="https://www.iehr.ai/fhir/ie/core/must-support.html"
+                >Must Support</a
+              >: This page defines the expectations for mandatory and Must
+              Support elements in the IE Core Profiles.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.iehr.ai/fhir/ie/core/guidance.html">Guidance</a>:
+          The Guidance pages document best practices and how to use the profiles
+          and transactions defined in this guide.
+          <ul>
+            <li>
+              <a href="https://www.iehr.ai/fhir/ie/core/iecdi.html">IECDI</a>:
+              This page maps the IE Core Profiles to the (IECDI) data classes
+              and data elements.
+            </li>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/general-guidance.html"
+                title="General Guidance Page"
+                >General Guidance</a
+              >: This page provides guidance, definitions, and requirements
+              common to all actors and profiles used in this guide.
+            </li>
+            <li>
+              <a href="https://www.iehr.ai/fhir/ie/core/clinical-notes.html"
+                >Clinical Notes</a
+              >: This page provides guidance on the interactions between
+              Consumers and Producers of clinical notes.
+            </li>
+            <li>
+              <a href="https://www.iehr.ai/fhir/ie/core/medication-list.html"
+                >Medication List</a
+              >: This page provides guidance on how a patient or provider can
+              access a patient's medications.
+            </li>
+            <li>
+              <a href="https://www.iehr.ai/fhir/ie/core/basic-provenance.html"
+                >Basic Provenance</a
+              >: This page provides implementers with important definitions to
+              create and share the Provenance Resource.
+            </li>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/screening-and-assessments.html"
+                >Screening and Assessments</a
+              >: This page documents how IE Core Profiles are used to represent
+              screenings and assessments for patient health status
+            </li>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/changes-between-versions.html"
+                >Changes Between Versions</a
+              >: This page considers the user and developer experience when
+              transitioning between versions of IE Core and documents the
+              changes between versions.
+            </li>
+            <li>
+              <a href="https://www.iehr.ai/fhir/ie/core/future-of-IE-core.html"
+                >Future of IE Core</a
+              >: This page outlines the approach to adding new content to IE
+              Core.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.iehr.ai/fhir/ie/core/artifacts.html"
+            >FHIR Artifacts</a
+          >: These pages provide detailed descriptions and formal definitions
+          for all the FHIR objects defined in this guide.
+          <ul>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/profiles-and-extensions.html"
+                >Profiles and Extensions</a
+              >: This page lists the IE Core Profiles and Extensions defined in
+              this guide to exchange quality data.
+              <ul>
+                <li>
+                  Each IE Core Profile page includes a narrative description
+                  that lists all the
+                  <a href="https://www.iehr.ai/fhir/ie/core/must-support.html"
+                    >Mandatory</a
+                  >
+                  and
+                  <a href="https://www.iehr.ai/fhir/ie/core/must-support.html"
+                    >Must Support</a
+                  >
+                  data elements, profile-specific implementation guidance, and
+                  formal definitions. A "Quick Start" guide summarizes the
+                  supported search transactions for each profile. Although the
+                  guidance typically focuses on the profiled elements, it also
+                  may cover un-profiled elements to aid with implementation and
+                  certification.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/search-parameters-and-operations.html"
+                >Search Parameters and Operations</a
+              >: This page lists the defined IE Core Operations and Search
+              Parameters used in IE Core transactions.
+            </li>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/terminology.html"
+                title="Terminology Page"
+                >Terminology</a
+              >: This page lists the IE Core ValueSets, and CodeSystems defined
+              for the profiles.
+            </li>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/capability-statements.html"
+                >Capability Statements</a
+              >: These pages define the expected FHIR capabilities of the IE
+              Core Servers and Clients.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://www.iehr.ai/fhir/ie/core/security.html">Security</a>:
+          This page documents the general security requirements and
+          recommendations for actors.
+        </li>
+        <li>
+          <a href="https://www.iehr.ai/fhir/ie/core/examples.html">Examples</a>:
+          This page lists all the examples used in this guide. These examples
+          show what data produced and consumed by systems conforming with this
+          implementation guide might look like. Every effort has been made to
+          ensure that the examples are correct and useful, but they are not a
+          normative part of the specification, nor fully representative of
+          real-world examples.
+        </li>
+        <li>
+          <a name="l649">​</a
+          ><a
+            href="https://www.iehr.ai/fhir/ie/core/downloads.html"
+            title="Downloads Page"
+            >Downloads</a
+          >: This page provides links to downloadable artifacts.
+        </li>
+        <li>
+          <a href="https://www.iehr.ai/fhir/ie/core/changes.html">Change Log</a
+          >: This page documents the changes across the versions of IE Core
+        </li>
+      </ul>
+
+      <h3 id="ie-core-actors">
+        IE Core Actors<a
+          class="anchorjs-link"
+          href="#ie-core-actors"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h3>
+
+      <p>The following actors are part of the IE Core IG:</p>
+
+      <h4 id="ie-core-requestor">
+        IE Core Requestor<a
+          class="anchorjs-link"
+          href="#ie-core-requestor"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <p>
+        A IE Core Requester is an application that initiates a data access
+        request to retrieve patient data. The IE Core Requestor is the client in
+        a client-server interaction. The terms "IE Core Requestor" and "Client"
+        are used interchangeably throughout this guide and are not meant to
+        limit this actor to only patient and provider apps. For example, payers
+        and other users can use the same technology. These terms are a
+        short-hand notation for "user application".
+      </p>
+
+      <h4 id="ie-core-responder">
+        IE Core Responder<a
+          class="anchorjs-link"
+          href="#ie-core-responder"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <p>
+        A IE Core Responder is a system that responds to the data access request
+        providing patient data. The IE Core responder is the server in a
+        client-server interaction. The terms "IE Core Responder", "Server", and
+        "EHR" are used interchangeably throughout this guide and are not meant
+        to limit this actor to electronic health record systems. For example,
+        HIEs, care coordination platforms, population health systems, etc., can
+        use the same technology. These terms are a short-hand notation for
+        "interoperable healthcare platform".
+      </p>
+
+      <h3 id="ie-core-profiles">
+        IE Core Profiles<a
+          class="anchorjs-link"
+          href="#ie-core-profiles"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h3>
+
+      <p>
+        Below is the list of IE Core Profiles. Each profile identifies which
+        core elements, extensions, vocabularies, and ValueSets
+        <strong>SHALL</strong> be present in the resource when using this
+        profile. Together, they promote interoperability and adoption through
+        common implementation and provide the floor for standards development
+        for specific use cases. See the
+        <a href="https://www.iehr.ai/fhir/ie/core/iecdi.html">IECDI</a> page,
+        for a mapping to the iEHR IE Core Data for Interoperability (IECDI).
+      </p>
+
+      <p>
+        A simple narrative summary gives each profile's requirements and
+        guidance. A formal hierarchical table presents a
+        <a href="http://hl7.org/fhir/R4/formats.html#table">logical view</a> of
+        the content in both a differential and snapshot view, and provides
+        references to appropriate terminologies and examples.
+      </p>
+
+      <!-- ================================================ -->
+      <!-- use this line to include an autogenerated list of all profiles
+		 remove it if you would like to hand generate it -->
+
+      <h4 id="allergyintolerance">
+        AllergyIntolerance<a
+          class="anchorjs-link"
+          href="#allergyintolerance"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-allergyintolerance.html"
+            >IE Core AllergyIntolerance Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="careplan">
+        CarePlan<a
+          class="anchorjs-link"
+          href="#careplan"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-careplan.html"
+            >IE Core CarePlan Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="careteam">
+        CareTeam<a
+          class="anchorjs-link"
+          href="#careteam"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-careteam.html"
+            >IE Core CareTeam Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="condition">
+        Condition<a
+          class="anchorjs-link"
+          href="#condition"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-condition-encounter-diagnosis.html"
+            >IE Core Condition Encounter Diagnosis Profile</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-condition-problems-health-concerns.html"
+            >IE Core Condition Problems and Health Concerns Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="coverage">
+        Coverage<a
+          class="anchorjs-link"
+          href="#coverage"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-coverage.html"
+            >IE Core Coverage Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="device">
+        Device<a
+          class="anchorjs-link"
+          href="#device"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-implantable-device.html"
+            >IE Core Implantable Device Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="diagnosticreport">
+        DiagnosticReport<a
+          class="anchorjs-link"
+          href="#diagnosticreport"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-diagnosticreport-lab.html"
+            >IE Core DiagnosticReport Profile for Laboratory Results
+            Reporting</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-diagnosticreport-note.html"
+            >IE Core DiagnosticReport Profile for Report and Note Exchange</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="documentreference">
+        DocumentReference<a
+          class="anchorjs-link"
+          href="#documentreference"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-adi-documentreference.html"
+            ><span class="bg-success"
+              >IE Core ADI DocumentReference Profile</span
+            >
+            <!-- new-content --></a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-documentreference.html"
+            >IE Core DocumentReference Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="encounter">
+        Encounter<a
+          class="anchorjs-link"
+          href="#encounter"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-encounter.html"
+            ><span class="bg-success">IE Core Encounter Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="goal">
+        Goal<a
+          class="anchorjs-link"
+          href="#goal"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-goal.html"
+            >IE Core Goal Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="identifier">
+        Identifier<a
+          class="anchorjs-link"
+          href="#identifier"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-company-registration-number.html"
+            >IE Core Company Registration Number</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-ihi.html"
+            >IE IHI</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-insurance-member-number.html"
+            >IE Insurance Member Number</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-medical-record-number.html"
+            >IE Medical Record Number</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="immunization">
+        Immunization<a
+          class="anchorjs-link"
+          href="#immunization"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-immunization.html"
+            ><span class="bg-success">IE Core Immunization Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="location">
+        Location<a
+          class="anchorjs-link"
+          href="#location"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-location.html"
+            ><span class="bg-success">IE Core Location Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="medication">
+        Medication<a
+          class="anchorjs-link"
+          href="#medication"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-medication.html"
+            >IE Core Medication Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="medicationdispense">
+        MedicationDispense<a
+          class="anchorjs-link"
+          href="#medicationdispense"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-medicationdispense.html"
+            ><span class="bg-success">IE Core MedicationDispense Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="medicationrequest">
+        MedicationRequest<a
+          class="anchorjs-link"
+          href="#medicationrequest"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-medicationrequest.html"
+            ><span class="bg-success">IE Core MedicationRequest Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="observation">
+        Observation<a
+          class="anchorjs-link"
+          href="#observation"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-average-blood-pressure.html"
+            ><span class="bg-success"
+              >IE Core Average Blood Pressure Profile</span
+            >
+            <!-- new-content --></a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-care-experience-preference.html"
+            >IE Core Care Experience Preference Profile</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-adi-documentation.html"
+            ><span class="bg-success"
+              >IE Core Observation ADI Documentation Profile</span
+            >
+            <!-- new-content --></a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-clinical-result.html"
+            >IE Core Observation Clinical Result Profile</a
+          >
+
+          <ul>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-lab.html"
+                >IE Core Laboratory Result Observation Profile</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-occupation.html"
+            >IE Core Observation Occupation Profile</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-pregnancyintent.html"
+            >IE Core Observation Pregnancy Intent Profile</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-pregnancystatus.html"
+            >IE Core Observation Pregnancy Status Profile</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-screening-assessment.html"
+            ><span class="bg-success"
+              >IE Core Observation Screening Assessment Profile</span
+            >
+            <!-- new-content --></a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-observation-sexual-orientation.html"
+            >IE Core Observation Sexual Orientation Profile</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-simple-observation.html"
+            ><span class="bg-success">IE Core Simple Observation Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-smokingstatus.html"
+            >IE Core Smoking Status Observation Profile</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-treatment-intervention-preference.html"
+            >IE Core Treatment Intervention Preference Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-vital-signs.html"
+            ><span class="bg-success">IE Core Vital Signs Profile</span>
+            <!-- new-content --></a
+          >
+
+          <ul>
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-head-occipital-frontal-circumference-percentile.html"
+                >IE Core Pediatric Head Occipital Frontal Circumference
+                Percentile Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-blood-pressure.html"
+                >IE Core Blood Pressure Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-bmi.html"
+                >IE Core BMI Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-body-height.html"
+                >IE Core Body Height Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-body-temperature.html"
+                >IE Core Body Temperature Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-body-weight.html"
+                >IE Core Body Weight Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-head-circumference.html"
+                >IE Core Head Circumference Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-heart-rate.html"
+                >IE Core Heart Rate Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-pulse-oximetry.html"
+                >IE Core Pulse Oximetry Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-respiratory-rate.html"
+                >IE Core Respiratory Rate Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-pediatric-bmi-for-age.html"
+                >IE Core Pediatric BMI for Age Observation Profile</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-pediatric-weight-for-height.html"
+                >IE Core Pediatric Weight for Height Observation Profile</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4 id="organization">
+        Organization<a
+          class="anchorjs-link"
+          href="#organization"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-organization.html"
+            >IE Core Organization Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="patient">
+        Patient<a
+          class="anchorjs-link"
+          href="#patient"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-patient.html"
+            ><span class="bg-success">IE Core Patient Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="practitioner">
+        Practitioner<a
+          class="anchorjs-link"
+          href="#practitioner"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-practitioner.html"
+            >IE Core Practitioner Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="practitionerrole">
+        PractitionerRole<a
+          class="anchorjs-link"
+          href="#practitionerrole"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-practitionerrole.html"
+            >IE Core PractitionerRole Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="procedure">
+        Procedure<a
+          class="anchorjs-link"
+          href="#procedure"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-procedure.html"
+            ><span class="bg-success">IE Core Procedure Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="provenance">
+        Provenance<a
+          class="anchorjs-link"
+          href="#provenance"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-provenance.html"
+            >IE Core Provenance Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="questionnaireresponse">
+        QuestionnaireResponse<a
+          class="anchorjs-link"
+          href="#questionnaireresponse"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-questionnaireresponse.html"
+            >IE Core QuestionnaireResponse Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="relatedperson">
+        RelatedPerson<a
+          class="anchorjs-link"
+          href="#relatedperson"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-relatedperson.html"
+            >IE Core RelatedPerson Profile</a
+          >
+        </li>
+      </ul>
+
+      <h4 id="servicerequest">
+        ServiceRequest<a
+          class="anchorjs-link"
+          href="#servicerequest"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-servicerequest.html"
+            ><span class="bg-success">IE Core ServiceRequest Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <h4 id="specimen">
+        Specimen<a
+          class="anchorjs-link"
+          href="#specimen"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.iehr.ai/fhir/ie/core/StructureDefinition-ie-core-specimen.html"
+            ><span class="bg-success">IE Core Specimen Profile</span>
+            <!-- new-content --></a
+          >
+        </li>
+      </ul>
+
+      <!-- ================================================ -->
+
+      <h3 id="ie-core-fhir-restful-interactions">
+        IE Core FHIR RESTful interactions<a
+          class="anchorjs-link"
+          href="#ie-core-fhir-restful-interactions"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em"
+        ></a>
+      </h3>
+
+      <p>
+        For systems that support the IE Core Profile content structure and the
+        RESTful interactions defined for a resource, the requirements are
+        formally defined in the IE Core CapabilityStatements. In addition, each
+        profile page has a <em>Quick Start</em> Section that documents the
+        required FHIR RESTful search and read operations. These sections
+        demonstrate how to access a patient's clinical and administrative data:
+      </p>
+
+      <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+      <div>
+        <figure class="figure">
+          <figcaption class="figure-caption">
+            <strong>Example of a simple FHIR RESTful Search Transaction</strong>
+          </figcaption>
+          <img
+            src="core/basic_fhir_restful_interaction.svg"
+            alt="basic_fhir_restful_interaction.svg"
+            width="75%"
+            class="img-responsive img-rounded center-block"
+          />
+        </figure>
+
+        <p></p>
+      </div>
+
+      <p>
+        See the FHIR specification for details on
+        <a href="http://hl7.org/fhir/R4/http.html#search"
+          >FHIR RESTful Search API</a
+        >
+        and the
+        <a href="http://hl7.org/fhir/smart-app-launch/STU2">SMART App Launch</a>
+        for how an application gets access to a patient record.
+      </p>
+    </div>
+  </body>
 </html>
